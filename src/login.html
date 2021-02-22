@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>华为-登录页</title>
+    <link href="https://id1.cloud.huawei.com/CAS/up/idmw_rss_66/logos/icons/huawei.ico" type="image/x-icon"
+        rel="shortcut icon">
+    <link rel="stylesheet" href="../src/css/login.css">
+    <script src="../src/script/login_module.js" type="module"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="login-header">
+        <div class="wrapper">
+            <div class="main-topLogo">
+                <img src="https://id1.cloud.huawei.com/CAS/up/idmw_rss_66/logos/HUAWEI.svg" class="header-logoPic"
+                    style="height:24px; width:108px; margin-top: 0;">
+            </div>
+            <div class="website-name">
+                <b class="split-line"></b>
+                <b class="headTitle">华为商城</b>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主体部分 -->
+    <div class="hwid-root">
+        <div class="hwid-login-root">
+            <div class="hwid-fullpage-container">
+                <!-- title -->
+                <div class="hwid-full-header-title">
+                    <span class="hwid-text-container hwid-header-text">
+                        <span>华为帐号登录</span>
+                    </span>
+                </div>
+                <!-- main -->
+                <div>
+                    <!-- left -->
+                    <span class="hwid-fullpage-left-side">
+                        <div class="hwid-qrCode-root">
+                            <div class="hwid-qrcode-full-box hwid-qrcode-box-common">
+                                <div class="hwid-qrCode-imgDIv" title="">
+                                    <img alt="Scan me!" src="../src/img/ewm.png" style="display: block;">
+                                </div>
+                                <!---->
+                                <div class="hwid-full-qrcode-desc">
+                                    <span class="hwid-text-container">
+                                        若您使用华为手机，请进入“设置”&gt;“华为帐号”扫码登录。
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                    <!-- line -->
+                    <span class="hwid-fullpage-split-line hwid-fullpage-split-line-default-height"></span>
+                    <!-- right -->
+                    <span class="hwid-fullpage-right-side">
+                        <!-- 错误提示文本 -->
+                        <div class="hwid-input-errorMsg">
+                            <div class="errorDiv">
+                                <i></i>
+                                <span class="err-msg"></span>
+                            </div>
+                        </div>
+                        <!-- 帐号 -->
+                        <div id="login_user" class="hwid-input-container hwid-input-container-normal">
+                            <div class="input-content">
+                                <input type="text" name="username" id="username" placeholder="手机号/邮箱地址/帐号名"
+                                    class="hwid-input">
+                            </div>
+                        </div>
+                        <!-- 密码 -->
+                        <div id="login_pass" class="hwid-input-container hwid-input-container-normal margin-top">
+                            <div class="input-content">
+                                <input type="password" name="password" id="password" placeholder="密码"
+                                    class="hwid-input">
+                            </div>
+                        </div>
+
+                        <p class="p-link">
+                            <span class="hwid-text-container">
+                                <a class="hwid-link" href="#">短信验证码登录</a>
+                            </span>
+                        </p>
+                        <!-- 登录按钮 -->
+                        <div class="hwid-login-btn">
+                            <input type="button" id="hwid-loginBtn" value="登录"
+                                class="hwid-btn hwid-btn-reg hwid-sel send-ajax">
+                        </div>
+
+                        <div class="hwid-full-link">
+                            <span class="hwid-text-container">
+                                <a class="hwid-link" href="registry.html">注册</a>
+                            </span>
+                            <span class="hwid-text-container border">
+                                <a class="hwid-link" href="#">忘记密码</a>
+                            </span>
+                            <span class="hwid-text-container">
+                                <a class="hwid-link" href="#">遇到问题</a>
+                            </span>
+                        </div>
+
+                        <div class="hwid-third-login-list">
+                            <span class="hwid-icon-third_qq"></span>
+                            <span class="hwid-icon-third_alipay"></span>
+                            <span class="hwid-icon-third_weixin"></span>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 底部 -->
+    <div class="main-footer btmAuto">
+        <div class="login-footer">
+            <!-- 授权区域 -->
+            <div class="warrant-area">
+                <p class="footer-nav" style="text-align: center;line-height:20px;height:20px;">
+                    <a href="#" class="rule">华为帐号用户协议</a>
+                    <em class="foot_em">|</em>
+                    <a href="#" class="rule">关于华为帐号与隐私的声明</a>
+                    <em class="foot_em">|</em>
+                    <a href="#" class="rule">常见问题</a>
+                    <em class="foot_em">|</em>
+                    <a href="#" class="rule">Cookies</a>
+                </p>
+                <p id="copyrightPart">
+                    华为帐号 版权所有 © 2011-2021
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>华为商城</title>
+    <link href="https://id1.cloud.huawei.com/CAS/up/idmw_rss_66/logos/icons/huawei.ico" type="image/x-icon"
+        rel="shortcut icon">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="../src/script/cartList_module.js" type="module"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="layout">
+            <div class="header-left">
+                <ul>
+                    <li class="border-none"><a href="index.html">首页</a></li>
+                    <li><a href="#">华为官网</a></li>
+                    <li><a href="#">花粉俱乐部</a></li>
+                    <li><a href="#">V码(优购码)</a></li>
+                    <li><a href="#">企业购</a></li>
+                    <li><a href="#">Select Region</a></li>
+                    <li class="dropdown-li"><a href="#" class="s-dropdown">更多精彩</a></li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <ul>
+                    <li class="unlogin_status border-none">
+                        <a href="login.html" rel="nofollow">请登录</a>
+                        <a href="registry.html" rel="nofollow">&nbsp;&nbsp;注册</a>
+                    </li>
+                    <li class="logined hide">
+                        你好！&nbsp;
+                        <span class="login-username"></span>
+                        &nbsp;
+                        <a href="index.html" class="ex-login">退出</a>
+                    </li>
+                    <li><a href="#">我的订单</a></li>
+                    <li class="dropdown-li"><a href="#" class="s-dropdown">客户服务</a></li>
+                    <li class="dropdown-li"><a href="#" class="s-dropdown">网站导航</a></li>
+                    <li class="dropdown-li"><a href="#" class="s-dropdown">手机版</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="order-header">
+        <div class="layout">
+            <div class="left">
+                <div class="logo logo-word">
+                    <a href="index.html" title="华为商城">
+                        <img src="https://res.vmallres.com/pimages//sale/2019-01/AF2GXbxrWmRqvyNfYzCl.png" alt="华为商城">
+                    </a>
+                    <span>我的购物车</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--main-->
+    <div id="container" class="cart">
+        <div class="w">
+            <!--包裹购物车-->
+            <div class="cart-wrap" style="display: block;">
+                <div class="w">
+                    <div id="jd-cart">
+                        <div class="cartmain">
+                            <div class="cart-thead">
+                                <div class="cart-col t-checkbox">
+                                    <div class="cart-checkbox">
+                                        <input type="checkbox" checked="" name="" id="" class="allsel" value="" /> 全选
+                                    </div>
+                                </div>
+                                <div class="cart-col t-goods">商品</div>
+                                <div class="cart-col t-props"></div>
+                                <div class="cart-col t-prices">单价(元)</div>
+                                <div class="cart-col t-quantity">数量</div>
+                                <div class="cart-col t-sum">小计(元)</div>
+                                <div class="cart-col t-action">操作</div>
+                            </div>
+                            <div id="cart-list">
+                                <div class="cart-item-list">
+                                    <div class="cart-tbody">
+                                        <!-- 显示购物车列表 -->
+                                        <div class="item-list">
+                                            <div class="goods-item goods-item-sele" style="display: none;">
+                                                <div class="goods-info">
+                                                    <div class="cell b-checkbox">
+                                                        <div class="cart-checkbox">
+                                                            <input type="checkbox" checked="" name="" id="" value="" />
+                                                            <span class="line-circle"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cell b-goods">
+                                                        <div class="goods-name">
+                                                            <div class="goods-pic">
+                                                                <a href=""><img src="" alt="" /></a>
+                                                            </div>
+                                                            <div class="goods-msg">
+                                                                <div class="goods-d-info">
+                                                                    <a href=""></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cell b-props">
+                                                        <div class="prop-text"></div>
+                                                    </div>
+                                                    <div class="cell b-price">
+                                                        <strong>￥99.99</strong>
+                                                        <div class="sales-promotion-dropdown">
+                                                        </div>
+                                                    </div>
+                                                    <div class="cell b-quantity">
+                                                        <div class="quantity-form">
+                                                            <a class="quantity-down" href="javascript:void(0)">-</a>
+                                                            <input type="text" value="1" />
+                                                            <a class="quantity-add" href="javascript:void(0)">+</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cell b-sum">
+                                                        <strong>99.99</strong>
+                                                    </div>
+                                                    <div class="cell b-action">
+                                                        <a href="">删除</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cart-floatbar">
+                        <div class="select-all">
+                            <div class="cart-checkbox">
+                                <input type="checkbox" checked="" name="" id="" class="allsel" value="" /> 全选
+                            </div>
+                        </div>
+                        <div class="operation">
+                            <a href="shopCartList.html">删除选中的商品</a>
+                        </div>
+                        <div class="toolbar-right">
+                            <div class="btn-area">
+                                <a class="settlement-btn" href="shopCartList.html">立即结算</a>
+                            </div>
+                            <div class="price-sum">
+                                <span class="txt">总价（不含运费）：</span>
+                                <span class="totalprice">￥0.00</span>
+                                <span class="txt">已节省：</span>
+                                <span class="totalsave">-￥0.00</span>
+                            </div>
+                            <div class="amount-sum">
+                                已选择
+                                <em>0</em> 件商品
+                                <b></b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 空购物车 -->
+            <div class="cart-empty">
+                <span class="icon-minicart"></span>
+                <p>您的购物车里什么也没有哦~</p>
+                <a class="go-shopping" href="index.html">去逛逛</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <!-- 口号 -->
+        <div class="slogan-container">
+            <div class="slogan">
+                <ul style="overflow: hidden;">
+                    <li class="s1">
+                        <a href="#">
+                            <i></i>
+                            百强企业 品质保证
+                        </a>
+                    </li>
+                    <li class="s2">
+                        <a href="#">
+                            <i></i>
+                            7天退货 15天换货
+                        </a>
+                    </li>
+                    <li class="s3">
+                        <a href="#">
+                            <i></i>
+                            48元起免运费
+                        </a>
+                    </li>
+                    <li class="s4">
+                        <a href="#">
+                            <i></i>
+                            2000家服务店 全国联保
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 服务 -->
+        <div class="service-container">
+            <div class="service">
+                <div class="service-l fl">
+                    <dl class="s1">
+                        <dt>
+                            <p class="title">购物相关</p>
+                        </dt>
+                        <dd>
+                            <ol>
+                                <li>
+                                    <a href="#">购物指南</a>
+                                </li>
+                                <li>
+                                    <a href="#">配送方式</a>
+                                </li>
+                                <li>
+                                    <a href="#">支付方式</a>
+                                </li>
+                                <li>
+                                    <a href="#">常见问题</a>
+                                </li>
+                            </ol>
+                        </dd>
+                    </dl>
+                    <dl class="s1">
+                        <dt>
+                            <p class="title">保修与退换货</p>
+                        </dt>
+                        <dd>
+                            <ol>
+                                <li>
+                                    <a href="#">购物指南</a>
+                                </li>
+                                <li>
+                                    <a href="#">配送方式</a>
+                                </li>
+                                <li>
+                                    <a href="#">支付方式</a>
+                                </li>
+                                <li>
+                                    <a href="#">常见问题</a>
+                                </li>
+                            </ol>
+                        </dd>
+                    </dl>
+                    <dl class="s1">
+                        <dt>
+                            <p class="title">维修与技术支持</p>
+                        </dt>
+                        <dd>
+                            <ol>
+                                <li>
+                                    <a href="#">购物指南</a>
+                                </li>
+                                <li>
+                                    <a href="#">配送方式</a>
+                                </li>
+                                <li>
+                                    <a href="#">支付方式</a>
+                                </li>
+                                <li>
+                                    <a href="#">常见问题</a>
+                                </li>
+                                <li>
+                                    <a href="#">上门服务</a>
+                                </li>
+                            </ol>
+                        </dd>
+                    </dl>
+                    <dl class="s1">
+                        <dt>
+                            <p class="title">特色服务</p>
+                        </dt>
+                        <dd>
+                            <ol>
+                                <li>
+                                    <a href="#">购物指南</a>
+                                </li>
+                                <li>
+                                    <a href="#">配送方式</a>
+                                </li>
+                                <li>
+                                    <a href="#">支付方式</a>
+                                </li>
+                                <li>
+                                    <a href="#">常见问题</a>
+                                </li>
+                            </ol>
+                        </dd>
+                    </dl>
+                    <dl class="s1">
+                        <dt>
+                            <p class="title">关于我们</p>
+                        </dt>
+                        <dd>
+                            <ol>
+                                <li>
+                                    <a href="#">购物指南</a>
+                                </li>
+                                <li>
+                                    <a href="#">配送方式</a>
+                                </li>
+                                <li>
+                                    <a href="#">支付方式</a>
+                                </li>
+                                <li>
+                                    <a href="#">常见问题</a>
+                                </li>
+                                <li>
+                                    <a href="#">意见反馈</a>
+                                </li>
+                            </ol>
+                        </dd>
+                    </dl>
+                    <dl class="s1">
+                        <dt>
+                            <p class="title">友情链接</p>
+                        </dt>
+                        <dd>
+                            <ol>
+                                <li>
+                                    <a href="#">购物指南</a>
+                                </li>
+                                <li>
+                                    <a href="#">配送方式</a>
+                                </li>
+                                <li>
+                                    <a href="#">支付方式</a>
+                                </li>
+                                <li>
+                                    <a href="#">常见问题</a>
+                                </li>
+                                <li>
+                                    <a href="#">华为应用市场</a>
+                                </li>
+                            </ol>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="service-r fl">
+                    <dl class="s7">
+                        <dt>
+                            <p class="title" id="vmallcontact">950805</p>
+                        </dt>
+                        <dd>
+                            <ol>
+                                <li>
+                                    <a href="#">
+                                        7x24小时客服热线（仅收市话费）
+                                    </a>
+                                </li>
+                            </ol>
+                        </dd>
+                        <dd>
+                            <a class="service-btn" href="#">
+                                <i></i>
+                                在线客服
+                            </a>
+                        </dd>
+                    </dl>
+                    <div class="service-code clearfix">
+                        <h2>关注Vmall：</h2>
+                        <ul class="clearfix">
+                            <li class="iconfont">
+                                <a href="#"></a>
+                            </li>
+                            <li class="iconfont">
+                                <a href="#"></a>
+                            </li>
+                            <li class="iconfont">
+                                <a href="#"></a>
+                            </li>
+                            <li class="iconfont">
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- foot -->
+        <div class="footer-container" style="padding-bottom: 0px;">
+            <div class="footer">
+                <div class="footer-warrant-area clearfix">
+                    <p class="footer-warrant-logo fl">
+                        <a href="index.html">
+                            <img src="https://res.vmallres.com/pimages/sale/2019-01/wLelYbpMVWbj9Xpaa5Fk.png" alt="">
+                        </a>
+                    </p>
+                    <div class="fl">
+                        <ul class="footer-warrant-link">
+                            <li>
+                                <a href="https://www.huawei.com/cn/">华为集团</a>
+                            </li>
+                            <li>
+                                <a href="https://consumer.huawei.com/cn/">华为CBG官网</a>
+                            </li>
+                            <li>
+                                <a href="https://club.huawei.com/">花粉俱乐部</a>
+                            </li>
+                            <li>
+                                <a href="https://appstore.huawei.com/">华为应用市场</a>
+                            </li>
+                            <li>
+                                <a href="https://emui.huawei.com/cn/">EMUI</a>
+                            </li>
+                            <li>
+                                <a href="https://cloud.huawei.com">华为终端云空间</a>
+                            </li>
+                            <li>
+                                <a href="https://developer.huawei.com/cn/">开发者联盟</a>
+                            </li>
+                            <li>
+                                <a href="https://m.vmall.com/">华为商城手机版</a>
+                            </li>
+                            <li>
+                                <a href="https://www.vmall.com/shopdc/sitemap.html">网站地图</a>
+                            </li>
+                        </ul>
+                        <a href="#">隐私声明</a>
+                        <a href="#">服务协议</a>
+                        <a href="#">COOKIES</a>Copyright © 2012-
+                        <span>2021</span>
+                        华为终端有限公司 版权所有
+                        <a href="#">粤ICP备19015064号</a>
+                        <em>|</em>
+                        <a href="#">粤公网安备 44190002003939号</a>
+                        <br>
+                        增值电信业务经营许可证：粤B2-20190762
+                        <em>|</em>
+                        备案主体编号：44201919072182
+                        <br>
+                        <a href="#">互联网药品信息服务资格证（粤）-非经营性-2020-0102</a>
+                        | 粤东食药监械经营备20203930
+                    </div>
+                    <p class="fr footer-warrant-img">
+                        <a href="#" class="fl">
+                            <img src="https://res.vmallres.com/pimages/template/content/2016/20160226162415360.png"
+                                alt="">
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+@charset "UTF-8";
+body, ul, li, p, h1, h2, h3, h4, h5, h6, img, br, hr, table, tr, td, dl, dt, dd, form, img {
+  margin: 0;
+  padding: 0; }
+
+em, strong, i, u {
+  font-style: normal; }
+
+body {
+  font-size: 12px;
+  font-family: Microsoft Yahei,STHeiti,Simsun,STSong;
+  color: #191919;
+  line-height: 1;
+  font: 12px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif; }
+
+.clear {
+  clear: both;
+  font-size: 0px; }
+
+ul, li {
+  list-style: none; }
+
+img {
+  border: none; }
+
+/*一般链接*/
+a {
+  text-decoration: none;
+  color: #848484; }
+
+a:hover {
+  color: #ca141d; }
+
+input {
+  outline: none; }
+
+/*# sourceMappingURL=reset.css.map */

@@ -1,0 +1,100 @@
+/* 头部样式 */
+.login-header{
+    display: block;
+    height: 48px;
+    background:rgba($color: #000000, $alpha: .05);
+     .wrapper{
+        width: auto;
+        max-width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        border: 0;
+        position: relative;
+        font-size: 0;
+        .main-topLogo{
+            float: left;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 12px 0 0;
+        }
+        img{
+            margin-left: 4px;
+            margin-top: 0 !important;
+        }
+        .website-name{
+            font-size: 20px;
+            font-family: Microsoft Yahei,STHeiti,Simsun,STSong,sans-serif;
+            height: 48px;
+            line-height: 48px;
+            padding: 0;
+            display: inline-block;
+            vertical-align: middle;
+            float: left;
+            .split-line{
+                float: left;
+                width: 1px;
+                height: 20px;
+                display: inline-block;
+                vertical-align: middle;
+                background: rgba(0,0,0,.2);
+                margin: 14px 16px;
+            }
+            .headTitle{
+                color: #191919;
+                font-size: 16px;
+                font-weight: 700;
+                float: left;
+                line-height: 1;
+                margin: 16px 0 0;
+            }
+        }
+        
+     }
+}
+/* ------------------------------------------------------ */
+/* 底部样式 */
+.main-footer{
+    display: block;
+    background: rgba($color: #000000, $alpha: .05);
+    position: absolute;
+    height: 110px;
+    width: 100%;
+}
+.btmAuto{
+    bottom: auto;
+}
+.login-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:14px;
+    height: 100%;
+    a{
+        font-size: 14px;
+        color: #000;
+    }
+    a:hover{
+        color: #000;
+        border-bottom: 1px solid #000;
+    }
+    .rule{
+        padding: 0 10px;
+    }
+    em{
+        color: rgba($color: #000000, $alpha: .1);
+        font-size: 16px;
+        font-weight: 400px;
+    }
+    #copyrightPart{
+        text-align: center;
+        color: #000;
+        opacity: .3;
+    }
+    p{
+        line-height: 14px;
+          margin: 14px auto;
+    }
+}
+body{
+    height: 100%;
+}

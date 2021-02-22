@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>华为-注册页</title>
+    <link href="https://id1.cloud.huawei.com/CAS/up/idmw_rss_66/logos/icons/huawei.ico" type="image/x-icon"
+        rel="shortcut icon">
+    <link rel="stylesheet" href="../src/css/registry.css">
+    <script src="../src/script/regsitry_module.js" type="module"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="login-header">
+        <div class="wrapper">
+            <div class="main-topLogo">
+                <img src="https://id1.cloud.huawei.com/CAS/up/idmw_rss_66/logos/HUAWEI.svg" class="header-logoPic"
+                    style="height:24px; width:108px; margin-top: 0;">
+            </div>
+            <div class="website-name">
+                <b class="split-line"></b>
+                <b class="headTitle">华为商城</b>
+            </div>
+        </div>
+    </div>
+
+    <!-- 表单注册部分 -->
+    <div class="hwid-root">
+        <form action="http://10.31.165.42/VMALL.COM/php/v_reg.php" method="POST">
+            <div class="hwid-register-main">
+                <div id="registerForm" class="hwid-register-content">
+                    <div>
+                        <!-- 标题 -->
+                        <div class="hwid-reg-detail">
+                            <div class="hwid-registerTitle">
+                                <div class="hwid-mainTitle">
+                                    <span class="hwid-text-container">华为帐号注册</span>
+                                </div>
+                                <div class="hwid-reg-loginLink">
+                                    <span class="hwid-text-container">已有帐号，</span>
+                                </div>
+                                <div class="hwid-reg-link">
+                                    <a href="login.html">
+                                        <span class="hwid-text-container">去登录 </span><em class="arrow">></em>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 国家 地区 -->
+                            <div class="hwid-input-box">
+                                <div id="chooseCountry" class="hwid-input-container">
+                                    <div class="input-left">
+                                        <span hwid-text-container>国家/地区</span>
+                                    </div>
+                                    <div class="input-right">
+                                        <span class="hwid-select-text">中国</span>
+                                        <div class="hwid-select-icon"></div>
+                                    </div>
+                                </div>
+                                <div class="hwid-input-errorMsg">
+                                    <i></i>
+                                    <span class="err-msg"></span>
+                                </div>
+                            </div>
+                            <!-- 手机号 -->
+                            <div class="hwid-input-box">
+                                <div id="phoneInputDiv_box" class="hwid-input-container hwid-input-container-normal">
+                                    <div class="input-left">
+                                        <span class="hwid-select-text">+86(中国)</span>
+                                        <div class="hwid-select-icon"></div>
+                                        <span class="hwid-pipe"></span>
+                                    </div>
+                                    <div class="input-content">
+                                        <input type="text" name="username" id="username" placeholder="请输入手机号"
+                                            class="hwid-input">
+                                    </div>
+                                </div>
+                                <!-- 错误提示文本 -->
+                                <div id="msg_phone" class="hwid-input-errorMsg">
+                                    <div class="errorDiv">
+                                        <i></i>
+                                        <span class="err-msg"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 密码 -->
+                            <div class="hwid-input-box">
+                                <div id="pwdDiv" class="hwid-input-container hwid-input-container-normal">
+                                    <div class="input-content">
+                                        <input type="password" name="password" id="password" placeholder="密码"
+                                            class="hwid-input">
+                                    </div>
+                                </div>
+                                <!-- 错误提示文本 -->
+                                <div id="msg_phone" class="hwid-input-errorMsg">
+                                    <div class="errorDiv">
+                                        <i></i>
+                                        <span class="err-msg"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 确认密码 -->
+                            <div class="hwid-input-box">
+                                <div id="checkPwd" class="hwid-input-container hwid-input-container-normal">
+                                    <div class="input-content">
+                                        <input type="password" name="check_pwd" id="check_pwd" placeholder="确认密码"
+                                            class="hwid-input">
+                                    </div>
+                                </div>
+                                <!-- 错误提示文本 -->
+                                <div id="msg_phone" class="hwid-input-errorMsg">
+                                    <div class="errorDiv">
+                                        <i></i>
+                                        <span class="err-msg"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 出生日期 -->
+                            <div class="hwid-input-box">
+                                <div id="chooseCountry" class="hwid-input-container">
+                                    <div class="input-left">
+                                        <span hwid-text-container>出生日期</span>
+                                    </div>
+                                    <div class="input-right">
+                                        <span class="hwid-select-text">1996年</span>
+                                        <div class="hwid-select-icon"></div>
+                                        <span class="hwid-select-text">5月</span>
+                                        <div class="hwid-select-icon"></div>
+                                        <span class="hwid-select-text">20日</span>
+                                        <div class="hwid-select-icon"></div>
+
+                                    </div>
+                                </div>
+                                <div class="hwid-input-errorMsg">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <!-- 注册按钮 -->
+                            <div class="hwid-reg-btn">
+                                <input type="submit" name="submit" id="hwid-submitBtn" value="注册"
+                                    class="hwid-btn hwid-btn-reg hwid-sel send-ajax">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- 底部 -->
+    <div class="main-footer btmAuto">
+        <div class="login-footer">
+            <!-- 授权区域 -->
+            <div class="warrant-area">
+                <p class="footer-nav" style="text-align: center;line-height:20px;height:20px;">
+                    <a href="#" class="rule">华为帐号用户协议</a>
+                    <em class="foot_em">|</em>
+                    <a href="#" class="rule">关于华为帐号与隐私的声明</a>
+                    <em class="foot_em">|</em>
+                    <a href="#" class="rule">常见问题</a>
+                    <em class="foot_em">|</em>
+                    <a href="#" class="rule">Cookies</a>
+                </p>
+                <p id="copyrightPart">
+                    华为帐号 版权所有 © 2011-2021
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

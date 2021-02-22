@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/* 头部样式 */
+.login-header {
+  display: block;
+  height: 48px;
+  background: rgba(0, 0, 0, 0.05); }
+  .login-header .wrapper {
+    width: auto;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    border: 0;
+    position: relative;
+    font-size: 0; }
+    .login-header .wrapper .main-topLogo {
+      float: left;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 12px 0 0; }
+    .login-header .wrapper img {
+      margin-left: 4px;
+      margin-top: 0 !important; }
+    .login-header .wrapper .website-name {
+      font-size: 20px;
+      font-family: Microsoft Yahei,STHeiti,Simsun,STSong,sans-serif;
+      height: 48px;
+      line-height: 48px;
+      padding: 0;
+      display: inline-block;
+      vertical-align: middle;
+      float: left; }
+      .login-header .wrapper .website-name .split-line {
+        float: left;
+        width: 1px;
+        height: 20px;
+        display: inline-block;
+        vertical-align: middle;
+        background: rgba(0, 0, 0, 0.2);
+        margin: 14px 16px; }
+      .login-header .wrapper .website-name .headTitle {
+        color: #191919;
+        font-size: 16px;
+        font-weight: 700;
+        float: left;
+        line-height: 1;
+        margin: 16px 0 0; }
+
+/* ------------------------------------------------------ */
+/* 底部样式 */
+.main-footer {
+  display: block;
+  background: rgba(0, 0, 0, 0.05);
+  position: absolute;
+  height: 110px;
+  width: 100%; }
+
+.btmAuto {
+  bottom: auto; }
+
+.login-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  height: 100%; }
+  .login-footer a {
+    font-size: 14px;
+    color: #000; }
+  .login-footer a:hover {
+    color: #000;
+    border-bottom: 1px solid #000; }
+  .login-footer .rule {
+    padding: 0 10px; }
+  .login-footer em {
+    color: rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    font-weight: 400px; }
+  .login-footer #copyrightPart {
+    text-align: center;
+    color: #000;
+    opacity: .3; }
+  .login-footer p {
+    line-height: 14px;
+    margin: 14px auto; }
+
+body {
+  height: 100%; }
+
+/*# sourceMappingURL=reg_headFoot.css.map */

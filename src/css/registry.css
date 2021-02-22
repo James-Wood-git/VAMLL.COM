@@ -1,0 +1,283 @@
+@charset "UTF-8";
+body {
+  height: 100%; }
+
+/* 头部样式 */
+.login-header {
+  display: block;
+  height: 48px;
+  background: rgba(0, 0, 0, 0.05); }
+  .login-header .wrapper {
+    width: auto;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    border: 0;
+    position: relative;
+    font-size: 0; }
+    .login-header .wrapper .main-topLogo {
+      float: left;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 12px 0 0; }
+    .login-header .wrapper img {
+      margin-left: 4px;
+      margin-top: 0 !important; }
+    .login-header .wrapper .website-name {
+      font-size: 20px;
+      font-family: Microsoft Yahei,STHeiti,Simsun,STSong,sans-serif;
+      height: 48px;
+      line-height: 48px;
+      padding: 0;
+      display: inline-block;
+      vertical-align: middle;
+      float: left; }
+      .login-header .wrapper .website-name .split-line {
+        float: left;
+        width: 1px;
+        height: 20px;
+        display: inline-block;
+        vertical-align: middle;
+        background: rgba(0, 0, 0, 0.2);
+        margin: 14px 16px; }
+      .login-header .wrapper .website-name .headTitle {
+        color: #191919;
+        font-size: 16px;
+        font-weight: 700;
+        float: left;
+        line-height: 1;
+        margin: 16px 0 0; }
+
+/* ------------------------------------------------------ */
+/*主体表单样式 */
+.hwid-root {
+  font-family: Microsoft Yahei,STHeiti,Simsun,STSong,sans-serif;
+  background-color: transparent;
+  color: #191919;
+  z-index: 99;
+  height: auto;
+  /* 正常情况下的input框 */
+  /* 获取焦点input框样式 */
+  /* 错误提示input框样式 */
+  /* 错误信息 */
+  /* 注册按钮 */
+  /* 不能提交状态 */ }
+  .hwid-root div {
+    box-sizing: content-box; }
+  .hwid-root .hwid-register-main {
+    width: 1200px;
+    margin: 0 auto;
+    background: #fff; }
+    .hwid-root .hwid-register-main .hwid-register-content {
+      width: 960px;
+      margin: 0 auto; }
+  .hwid-root .hwid-reg-detail {
+    padding: 60px 260px 38px;
+    background: #fff;
+    font-size: 14px; }
+  .hwid-root .hwid-registerTitle {
+    text-align: center;
+    margin: 10px 0 60px; }
+    .hwid-root .hwid-registerTitle .hwid-mainTitle {
+      text-align: center;
+      font-size: 32px;
+      color: #191919; }
+      .hwid-root .hwid-registerTitle .hwid-mainTitle .hwid-text-container {
+        text-align: left;
+        display: inline-block;
+        line-height: 1.3; }
+  .hwid-root .hwid-input-box {
+    padding-top: 8px; }
+  .hwid-root .hwid-reg-loginLink {
+    margin-top: 8px;
+    font-size: 18px;
+    color: #191919;
+    display: inline-block; }
+  .hwid-root .hwid-reg-link {
+    display: inline-block;
+    font-size: 18px; }
+    .hwid-root .hwid-reg-link a {
+      color: #007dff; }
+    .hwid-root .hwid-reg-link .arrow {
+      font-family: "黑体";
+      font-weight: bold; }
+  .hwid-root .hwid-input-container {
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    height: 48px;
+    line-height: 48px;
+    width: 100%;
+    position: relative; }
+    .hwid-root .hwid-input-container .input-left {
+      float: left;
+      border-right: 0;
+      padding: 0 16px;
+      height: 100%;
+      cursor: pointer; }
+    .hwid-root .hwid-input-container .input-right {
+      float: right;
+      line-height: 48px;
+      height: 100%;
+      cursor: pointer; }
+    .hwid-root .hwid-input-container .hwid-select-icon {
+      display: inline-block;
+      margin: 0 16px 0 8px;
+      width: 12px;
+      height: 7px;
+      vertical-align: middle;
+      background: url(../img/ic_hint_dropdown.svg) no-repeat;
+      background-position: 50%;
+      background-size: contain; }
+    .hwid-root .hwid-input-container .hwid-pipe {
+      width: 1px;
+      height: 27px;
+      display: inline-block;
+      position: relative;
+      background: rgba(0, 0, 0, 0.1);
+      left: 8px;
+      right: auto;
+      top: 8px;
+      line-height: 48px; }
+    .hwid-root .hwid-input-container .input-content {
+      position: relative;
+      height: 100%;
+      overflow: hidden; }
+      .hwid-root .hwid-input-container .input-content input {
+        border: 0;
+        background: transparent;
+        height: 100%;
+        width: 100%; }
+  .hwid-root .hwid-input-container-normal {
+    border: 1px solid transparent; }
+  .hwid-root .hwid-input-container-focus {
+    border: 1px solid #007dff; }
+  .hwid-root .hwid-input-container-error {
+    border: 1px solid #fa2a2d; }
+  .hwid-root .hwid-input-errorMsg {
+    margin: 8px;
+    font-size: 14px;
+    color: #fa2a2d; }
+    .hwid-root .hwid-input-errorMsg .errorDiv {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: start;
+      -webkit-box-align: start;
+      -ms-flex-align: center;
+      align-items: flex-start;
+      /* 错误信息图标 */
+      /* 错误文本 */ }
+      .hwid-root .hwid-input-errorMsg .errorDiv .ic-tips {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin-right: 4px;
+        margin-left: 0;
+        background-image: url(../img/ic_tips.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 3px; }
+      .hwid-root .hwid-input-errorMsg .errorDiv span {
+        width: calc(100% - 18px);
+        line-height: 1.4;
+        display: inline-block; }
+  .hwid-root .hwid-input {
+    padding: 0 16px; }
+  .hwid-root .hwid-reg-btn {
+    margin-top: 50px;
+    text-align: center; }
+  .hwid-root .hwid-btn.hwid-btn-reg {
+    border-radius: 8px;
+    background: #007dff;
+    width: 100%;
+    width: 310px;
+    font-size: 18px;
+    font-weight: 400;
+    display: inline-block;
+    height: 48px;
+    color: #fff;
+    text-transform: uppercase; }
+  .hwid-root .send-ajax {
+    cursor: default;
+    opacity: 0.38; }
+  .hwid-root .hwid-btn {
+    border: 1px solid #ccc;
+    padding: 0 16px; }
+
+/* --------------------------------------------------- */
+/* 底部样式 */
+.main-footer {
+  display: block;
+  background: rgba(0, 0, 0, 0.05);
+  position: absolute;
+  height: 110px;
+  width: 100%; }
+
+.btmAuto {
+  bottom: auto; }
+
+.login-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  height: 100%; }
+  .login-footer a {
+    font-size: 14px;
+    color: #000; }
+  .login-footer a:hover {
+    color: #000;
+    border-bottom: 1px solid #000; }
+  .login-footer .rule {
+    padding: 0 10px; }
+  .login-footer em {
+    color: rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    font-weight: 400px; }
+  .login-footer #copyrightPart {
+    text-align: center;
+    color: #000;
+    opacity: .3; }
+  .login-footer p {
+    line-height: 14px;
+    margin: 14px auto; }
+
+body, ul, li, p, h1, h2, h3, h4, h5, h6, img, br, hr, table, tr, td, dl, dt, dd, form, img {
+  margin: 0;
+  padding: 0; }
+
+em, strong, i, u {
+  font-style: normal; }
+
+body {
+  font-size: 12px;
+  font-family: Microsoft Yahei,STHeiti,Simsun,STSong;
+  color: #191919;
+  line-height: 1;
+  font: 12px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif; }
+
+.clear {
+  clear: both;
+  font-size: 0px; }
+
+ul, li {
+  list-style: none; }
+
+img {
+  border: none; }
+
+/*一般链接*/
+a {
+  text-decoration: none;
+  color: #848484; }
+
+a:hover {
+  color: #ca141d; }
+
+input {
+  outline: none; }
+
+/*# sourceMappingURL=registry.css.map */

@@ -1,0 +1,230 @@
+body{
+    background: #f5f5f5;
+}
+
+/* 二级菜单部分 */
+.main .hot-board {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1200px;
+    margin: 0 auto;
+    height: auto;
+    display: none;
+}
+.hot-board .category {
+    position: absolute;
+    left: 0;
+    top: 0px!important;
+    width: 200px;
+    z-index: 999!important;
+}
+.hot-board .products {
+    width: 484px;
+    position: absolute;
+    top: 0px!important;
+    left: 199px;
+    height: 420px;
+    max-width: 1020px;
+    background: #FFF;
+    padding: 20px 0 0 32px;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 0 46px rgb(0 0 0 / 10%);
+    z-index: 1;
+    overflow: hidden;
+    display: block!important;
+}
+.hot-board .products .item {
+    overflow: hidden;
+}
+
+.main .layout{
+    position: relative;
+}      
+.main .breadcrumb-area{
+    color: #000;
+    padding-top: 20px;
+    padding-bottom: 14px;
+    font-family: "仿宋";
+}
+.main .breadcrumb-area a,
+.main .breadcrumb-area span{
+    color: #666;
+    font-family: \5FAE\8F6F\96C5\9ED1,\5B8B\4F53;
+}
+.main .breadcrumb-area a:hover{
+    color: #ca141d;
+}
+.main .pro-cate-area{
+    background: #fff;
+    display: block;
+}
+.main .pro-cate-area .pro-cate-attr{
+    width: 1152px;
+    margin: 0 auto;
+    position: relative;
+    border-bottom: 1px solid #eaeaea;
+    overflow: hidden;
+}
+.main .pro-cate-area .pro-cate-attr div{
+    float: left;
+    color: #666;
+}
+.main .pro-cate-area .p-title{
+    text-align: left;
+    width: 106px;
+    line-height: 35px;
+}
+.main .pro-cate-area .p-values{
+    line-height: 35px;
+    float: left;
+    width: 1046px;
+}
+.main .pro-cate-area .p-values .choose{
+    color: #ca141d;
+}
+.main .pro-cate-area .p-values a{
+    display: inline-block;
+    margin-right: 40px;
+    margin-left: 20px;
+    color: #333;
+}
+.main .pro-cate-area .p-values a:hover{
+    color: #ca141d;
+}
+.main .pro-cate-area .p-values .price-btn{
+    padding-right: 20px;
+    position: relative;
+}
+.main .pro-cate-area .p-values .price-btn s{
+    position: absolute;
+    overflow: auto;
+    top: 11px;
+    right: 2px;
+    margin: 0;
+    width: 8px;
+    height: 14px;
+}
+.main .pro-cate-area .p-values .price-btn s::before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 5px solid #999;
+    display: block;
+}
+.main .pro-cate-area .p-values .price-btn s::after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 5px solid #999;
+    display: block;
+    margin-top: 2px;
+}
+
+.list {
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 14px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+.list ul{
+    width: 1210px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+.list li {
+    width: 200px;
+    height: 352px;
+    position: relative;
+    background: #fff;
+    margin: 0 10px 10px 0;
+    padding: 0 16px;
+    transition: all .2s linear 0s;
+    float: left;
+}
+.list li a{
+    display: block;
+    width: 100%;
+}
+
+.list li p {
+    line-height: 20px;
+    overflow: hidden;
+    color: #333;
+    font-size: 14px;
+    max-height: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.list .p-price{
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+.list .p-price b{
+    font-weight: normal;
+    line-height: 24px;
+    float: left;
+    color: #ca141d;
+}
+.list .p-price span{
+    width: 58px;
+    height: 14px;
+    line-height: 14px;
+    font-size: 12px;
+    text-align: center;
+    color: #68beff;
+    border: 1px solid #84c9fd;
+    float: left;
+    border-radius: 10px;
+    margin-left: 4px;
+    margin-top: 4px;
+}
+
+.list .p-label{
+    margin-bottom: 8px;
+    height: 16px;
+    overflow: hidden;
+}
+.list .p-label span{
+    padding: 0 5px;
+    line-height: 14px;
+    text-align: center;
+    color: #ca141d;
+    border: 1px solid #d5434a;
+    float: left;
+    margin-right: 4px;
+    font-size: 12px;
+}
+.list .p-comment{
+    font-size: 12px;
+    color: #999;
+    height: 14px;
+    line-height: 14px;
+    overflow: hidden;
+}
+.list .p-comment  em{
+    margin-right: 8px;
+      float: left;
+}
+
+.list li img {
+    width: 180px;
+    height: 180px;
+    display: block;
+    margin: 30px auto 0;
+}
+
+.list li span {
+   display: block;
+}
+
+@import "reset.css";
